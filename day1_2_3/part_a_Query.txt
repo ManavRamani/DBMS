@@ -1,0 +1,27 @@
+-------------------------------------------------------------------------------------------------------------
+                    Part    -       A  
+-------------------------------------------------------------------------------------------------------------
+
+--1. retrieve all data from table deposit
+    select * from deposit;
+--2. retrieve all data from table borrow
+    select * from borrow;
+--3. retrieve all data from table customers
+    select * from customers;
+--4. display account No, customer name & Amount from deposit
+    select actno,cname,amount from deposit;
+--5. display loan no, amount from borrow
+    select loanno,amount from borrow;
+--6. display loan details of all customers who belongs to 'andheri' branch.
+    select * from branch where city='andheri';
+--7. give account no and amount of deposit, whose account no is equals to 106.
+    select actno,amount from deposit where actno=106;
+--8. give name of borrows having amount greater than 5000,
+    select * from borrow where amount > 5000;
+--9. give name of customers who opend account after date '1-12-96'
+    select * from deposit where adate >= '1-12-96';
+--10. display name of customers whose account no is less then 105.
+    select * from deposit where actno < 105;
+
+
+-------------------------------------------------------------------------------------------------------------
