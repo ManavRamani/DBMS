@@ -1,0 +1,2 @@
+-- Display the Highest, Lowest, Total, and Average salary of all employees. Label the columns Maximum, Minimum, Total_Sal and Average_Sal, respectively.
+select MAX(Salary) as Maximum, MIN(Salary) as Minimum, SUM(Salary) as Total, AVG(Salary) as Average from Employee
